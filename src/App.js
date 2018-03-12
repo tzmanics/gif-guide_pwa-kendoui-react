@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { NumericTextBox } from '@progress/kendo-react-inputs';
+import { Button } from '@progress/kendo-react-buttons';
 import './App.css';
+import '@progress/kendo-theme-default/dist/all.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className='App'>
+        <div className='add-habit'>
+          <label> GOAL: </label>
+          <input />
+          <label> ITERATION </label>
+          <NumericTextBox />
+          <Button>
+          </Button>
+        </div>
       </div>
     );
   }
